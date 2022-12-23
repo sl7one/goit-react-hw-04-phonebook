@@ -29,7 +29,7 @@ const App = () => {
 
   useEffect(() => {
     localStorage.setItem('state', JSON.stringify(contacts));
-  });
+  }, [contacts]);
 
   const onSubmit = (name, number) => {
     const newData = {
